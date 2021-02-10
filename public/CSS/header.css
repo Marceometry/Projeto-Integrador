@@ -1,0 +1,86 @@
+/* cabeçalho */
+
+header {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* logo ifrs */
+
+aside {
+    width: 600px;
+}
+
+aside img {
+    width: 100%;
+}
+
+aside img:last-child {
+    display: none;
+}
+
+
+/* título do site e autores */
+
+#titulo {
+    width: 40%;
+    margin: 0 20px 0 0;
+    font-size: 18px;
+
+    line-height: 1.1;
+    text-align: right;
+}
+
+#titulo h1 {
+    margin-bottom: 15px;
+}
+
+
+/* mobile */
+
+@media (max-width: 1070px) {
+    #titulo {
+        width: 50%;
+    }
+
+    aside {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 820px) {
+    #titulo {
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    #titulo {
+        width: 150%;
+    }
+
+    aside img:first-child {
+        display: none;
+    }
+
+    aside img:last-child {
+        display: block;
+    }
+
+    aside img {
+        width: 100px;
+    }
+}
+
+
+@media (max-width: 470px) {
+    #titulo {
+        font-size: initial;
+    }
+}

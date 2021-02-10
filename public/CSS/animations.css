@@ -1,0 +1,48 @@
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes down {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes right {
+    from {
+        opacity: 0;
+        transform: translateX(15%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.animate-up {
+    animation: up 500ms;
+}
+
+.animate-down {
+    animation: down 300ms;
+}
+
+.animate-right {
+    animation: right 300ms;
+}

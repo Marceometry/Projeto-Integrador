@@ -1,0 +1,197 @@
+/* player de áudio */
+
+.player {
+    width: fit-content;
+    height: fit-content;
+    margin: 30px auto;
+    padding: 10px;
+
+    background: #dbf7fb;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* barra de progresso */
+
+#progress-bar {
+    margin: 15px 0;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progress {
+    width: 100%;
+    height: 5px;
+    margin: 0 10px;
+}
+
+
+/* botões */
+
+#buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+#buttons img {
+    width: 40px;
+    padding: 3px;
+    margin: 10px;
+    
+    border-radius: 50%;
+    background: rgb(241, 241, 241);
+
+    cursor: pointer;
+}
+
+#buttons img:hover {
+    transition: 200ms;
+    background: rgb(228, 228, 228);
+}
+
+#buttons img:active {
+    background: rgb(219, 219, 219);
+}
+
+
+img#mute {
+    margin-right: 4px;
+}
+
+#change-vol {
+    width: 34px;
+    height: 55px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#change-vol img {
+    width: 24px;
+    margin: 0;
+}
+
+
+/* player */
+
+.player button {
+    margin: 15px;
+    background: #c9f0f5;
+}
+
+.player button:hover {
+    background: #bbe8f0;
+    transition: 200ms;
+}
+
+.player button:active {
+    background: #b3e3eb;
+}
+
+
+/* mobile */
+
+@media (max-width: 800px) {
+    #progress {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 510px) {
+    #buttons img {
+        width: 35px;
+    }
+    
+    #change-vol {
+        width: 32px;
+    }
+
+    #change-vol img {
+        width: 22px;
+    }
+}
+
+
+@media (max-width: 475px) {
+    #buttons img {
+        width: 30px;
+    }
+    
+    #change-vol {
+        width: 30px;
+        height: 45px;
+    }
+
+    #change-vol img {
+        width: 20px;
+    }
+}
+
+
+@media (max-width: 440px) {
+    #buttons img {
+        margin: 10px 5px;
+    }
+    
+    #change-vol {
+        width: 25px;
+    }
+
+    #change-vol img {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .player p {
+        font-size: 16px;
+    }
+
+    #buttons img {
+        width: 25px;
+    }
+    
+    #change-vol {
+        width: 28px;
+    }
+
+    #change-vol img {
+        width: 18px;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .player p {
+        font-size: 14px;
+    }
+
+    #progress {
+        width: 50%;
+    }
+
+    #buttons img {
+        width: 20px;
+    }
+    
+    #change-vol {
+        width: 26px;
+        height: 35px;
+    }
+
+    #change-vol img {
+        width: 16px;
+    }
+}

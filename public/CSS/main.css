@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    font-family: Nunito, sans-serif;
+    /* border: 1px solid black; */
+}
+
+
+body {
+    margin: 0;
+    background: rgb(81, 190, 233);
+    font-size: 18px;
+}
+
+
+/* div que contém todos os elementos da página */
+
+#container {
+    width: min(100%, 1500px);
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* backgrounds e bordas padrão */
+
+section, .retangulo, ul, .conteudo, .imagens img, .player, .player button {
+    background: #b3e6ed;
+    border: 1px solid #079fb3;
+    border-radius: 15px;
+}
+
+
+/* sombras das caixas */
+
+section, .retangulo, .corpo {
+    box-shadow: 0 0 15px 3px #079fb3;
+}
+
+
+/* removendo estilização padrão dos links */
+
+a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* mudanças de backgrounds nos links */
+
+ul.lista-disciplinas li:hover, 
+ul.nav-bar li a:hover, 
+.retangulo:hover {
+    background: #8cd9e4;
+    transition: 200ms;
+}
+
+ul.lista-disciplinas li:active, 
+ul.nav-bar li a:active, 
+.retangulo:active {
+    background: #80cfdb;
+}

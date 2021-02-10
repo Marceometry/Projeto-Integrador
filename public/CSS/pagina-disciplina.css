@@ -1,0 +1,123 @@
+/* corpo da página */
+
+.corpo {
+    width: 90%;
+    margin: 50px 0;
+    border-radius: 15px;
+}
+
+
+/* conteúdo da página */
+
+.conteudo {
+    width: 100%;
+    padding: 40px;
+    border-radius: 0 0 15px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* assuntos */
+
+.topico {
+    margin-bottom: 40px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    text-align: justify;
+}
+
+.topico h1 {
+    margin: 0 0 30px;
+}
+
+
+/* textos */
+
+.texto {
+    width: 70%;
+}
+
+
+/* poemas */
+
+.poema-header {
+    margin-top: -10px;
+}
+
+.poema {
+    width: fit-content;
+    margin: 0 auto 40px;
+}
+
+.poema h3 {
+    margin-top: 0;
+}
+
+
+/* imagens */
+
+.imagens {
+    width: 35%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagens img {
+    width: 70%;
+    margin: 7px 0 3px;
+}
+
+.imagens i {
+    max-width: 66%;
+    text-align: justify;
+}
+
+
+/* referências */
+
+.referencias hr {
+    border: 1px solid #079fb3;
+}
+
+.referencias a {
+    color: rgb(12, 71, 102);
+}
+
+.referencias a:visited {
+    color: rgb(75, 13, 104);
+}
+
+.referencias a:hover {
+    color: rgb(3, 32, 49);
+}
+
+.referencias a:active {
+    color: rgb(0, 0, 0);
+}
+
+
+/* mobile */
+
+@media (max-width: 630px) {
+    .topico {
+        flex-direction: column;
+    }
+
+    .texto, .imagens {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 505px) {
+    .poema p {
+        font-size: 16px;
+    }
+}

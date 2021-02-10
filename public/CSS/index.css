@@ -1,0 +1,116 @@
+/* introdução */
+
+section {
+    width: 70%;
+    margin: 40px 0;
+    padding: 20px;
+    font-size: 17px;
+
+    display: flex;
+    text-align: justify;
+}
+
+
+/* conteúdo principal */
+
+main {
+    width: min(100vw, 1120px);
+    margin-bottom: 50px;
+}
+
+
+/* menu com os links das páginas */
+
+.menu {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a {
+    width: 44.6428571429%;
+    margin: 30px;
+}
+
+
+/* links das páginas */
+
+.retangulo {
+    width: 100%;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.retangulo h1 {
+    height: fit-content;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.retangulo p {
+    height: fit-content;
+    width: min(30%, 360px);
+    margin: 110px 0 0 0;
+
+    display: none;
+    position: absolute;
+}
+
+.retangulo img {
+    width: 20%;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.retangulo:hover p {
+    display: block;
+}
+
+
+/* mobile */
+
+@media (max-width: 960px) {
+    .retangulo p {
+        margin-top: 95px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #introducao {
+        width: 90%;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .menu a {
+        width: 92.1052631579%;
+        margin: 30px 0;
+    }
+
+    .retangulo h1 {
+        line-height: 1.1;
+    }
+
+    .retangulo p {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .retangulo h1 {
+        font-size: 26px;
+    }
+
+    .retangulo p {
+        width: 200px;
+        margin-top: 70px;
+    }
+}
