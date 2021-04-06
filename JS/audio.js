@@ -30,7 +30,7 @@ audio.ontimeupdate = function() {
     var duration = audio.duration
 
     if (currentTime == duration) {
-        document.getElementById('play-pause').src = './public/icons/play_circle_outline-24px.svg';
+        document.getElementById('play-pause').src = '/icons/play_circle_outline-24px.svg';
     }
   
     document.getElementById("current-time").innerHTML = convertElapsedTime(currentTime)
@@ -65,10 +65,10 @@ function convertElapsedTime(inputSeconds) {
 document.getElementById('play-pause').onclick = function() {
     if (audio.paused) {
         audio.play();
-        document.getElementById('play-pause').src = './public/icons/pause_circle_outline-24px.svg';
+        document.getElementById('play-pause').src = '/icons/pause_circle_outline-24px.svg';
     } else {
             audio.pause();
-            document.getElementById('play-pause').src = './public/icons/play_circle_outline-24px.svg';
+            document.getElementById('play-pause').src = '/icons/play_circle_outline-24px.svg';
     }
 }
 
@@ -96,7 +96,7 @@ document.getElementById('avancar').onclick = function() {
 document.getElementById('abaixaVol').onclick = function() {
     if (audio.muted == true) {
         audio.muted = false
-        document.getElementById('mute').src = './public/icons/volume_up-24px.svg'
+        document.getElementById('mute').src = '/icons/volume_up-24px.svg'
     }
     audio.volume -= 0.2
 }
@@ -104,7 +104,7 @@ document.getElementById('abaixaVol').onclick = function() {
 document.getElementById('aumentaVol').onclick = function() {
     if (audio.muted == true) {
         audio.muted = false
-        document.getElementById('mute').src = './public/icons/volume_up-24px.svg'
+        document.getElementById('mute').src = '/icons/volume_up-24px.svg'
     }
     audio.volume += 0.2
 }
@@ -115,9 +115,9 @@ document.getElementById('aumentaVol').onclick = function() {
 document.getElementById('mute').onclick = function() {
     if (audio.muted == false) {
         audio.muted = true
-        document.getElementById('mute').src = './public/icons/volume_off-24px.svg'
+        document.getElementById('mute').src = '/icons/volume_off-24px.svg'
     } else {
             audio.muted = false
-            document.getElementById('mute').src = './public/icons/volume_up-24px.svg'
+            document.getElementById('mute').src = '/icons/volume_up-24px.svg'
         }
 }
